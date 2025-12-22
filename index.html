@@ -10,15 +10,17 @@
 </head>
 <body>
 
-    <header class="hero fade-in">
-        <div class="container">
-            <h1>Spice Island</h1>
-            <p style="letter-spacing: 3px; text-transform: uppercase; font-size: 0.9rem; margin-top: -10px; margin-bottom: 2rem; color: var(--gold-dim);">Indonesia</p>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="logo-container">
+                <img src="images/colour_logo.svg" alt="Spice Island Indonesia Logo">
+            </div>
+            <p class="hero-subtitle">Indonesia</p>
             <p>Experience the vibrant flavours of Indonesia. Authentic, homemade dishes prepared with passion throughout the week.</p>
             <div class="contact-info">
                 <a href="tel:07877282625" class="btn">Order: 07877 282625</a>
             </div>
-            <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">Minimum order 2 items • Order 1 day before collection</p>
+            <p style="font-size: 1.05rem; margin-top: 1.5rem; opacity: 0.85;">Minimum order 2 items • Order 1 day before collection</p>
         </div>
     </header>
 
@@ -50,11 +52,11 @@
                         <div class="item-price">£8</div>
                     </div>
                     <div class="menu-item interactive"
-                         data-name="Tahu Isi (5 pcs)"
+                         data-name="Tahu Isi (4 pcs)"
                          data-description="Savory stuffed tofu filled with a stir-fried vegetable mix, battered and deep-fried until golden."
                          data-ingredients="Tofu, Carrots, Cabbage, Bean Sprouts, Garlic, Shallots, Flour Batter.">
                         <div>
-                            <div class="item-name">Tahu Isi (5 pcs)</div>
+                            <div class="item-name">Tahu Isi (4 pcs)</div>
                             <div class="item-desc">Stuffed tofu</div>
                         </div>
                         <div class="item-price">£8</div>
@@ -70,14 +72,24 @@
                         <div class="item-price">£8</div>
                     </div>
                     <div class="menu-item interactive"
+                         data-name="Crispy Tofu (4 pcs)"
+                         data-description="Golden crispy tofu pieces, perfectly fried until crunchy on the outside and soft inside."
+                         data-ingredients="Firm Tofu, Cornstarch, Salt, Pepper, Vegetable Oil.">
+                        <div>
+                            <div class="item-name">Crispy Tofu (4 pcs)</div>
+                            <div class="item-desc">Deep fried crispy tofu</div>
+                        </div>
+                        <div class="item-price">£8</div>
+                    </div>
+                    <div class="menu-item interactive"
                          data-name="Chicken Ginger Soup"
-                         data-description="A warming and comforting clear soup with prominent ginger notes, perfect for restoring vitality. (Soup only)."
-                         data-ingredients="Chicken Broth, Fresh Ginger, Garlic, Shallots, Spring Onion, Sesame Oil.">
+                         data-description="A warming and comforting clear soup with prominent ginger notes, perfect for restoring vitality."
+                         data-ingredients="Chicken (1 thigh + 1 drumstick), Fresh Ginger, Garlic, Shallots, Spring Onion, Sesame Oil, Chicken Broth.">
                         <div>
                             <div class="item-name">Chicken Ginger Soup</div>
-                            <div class="item-desc">Warm ginger soup (soup only, not sauce)</div>
+                            <div class="item-desc">1 portion (1 thigh + 1 drumstick) or 2 thigh fillets</div>
                         </div>
-                        <div class="item-price-flexible">See Sets</div>
+                        <div class="item-price">£8</div>
                     </div>
                 </div>
             </div>
@@ -85,7 +97,7 @@
 
         <!-- RICE DISHES -->
         <section id="rice" class="fade-in">
-            <h2 class="section-title">Fried Rice & Specialties</h2>
+            <h2 class="section-title">Rice Dishes</h2>
             <div class="menu-grid">
                 <div class="menu-card">
                     <div class="menu-item interactive"
@@ -245,17 +257,77 @@
          <!-- SIDES -->
          <section id="sides" class="fade-in">
             <h2 class="section-title">Sides</h2>
-             <div class="menu-grid" style="justify-content: center;">
-                 <div class="menu-card" style="max-width: 500px; margin: 0 auto;">
+             <div class="menu-grid">
+                 <div class="menu-card">
                      <div class="menu-item interactive"
-                          data-name="Rice Fragrance"
+                          data-name="Fragrant Rice"
                           data-description="Aromatic herb rice cooked with fragrant aromatics. A perfect upgrade from plain rice."
                           data-ingredients="Jasmine Rice, Kaffir Lime Leaves, Lemongrass, Shallots, Garlic, Coconut Oil.">
                          <div>
-                             <div class="item-name">Rice Fragrance</div>
+                             <div class="item-name">Fragrant Rice</div>
                              <div class="item-desc">Herb rice with kaffir lime leaves, lemongrass, shallot & garlic</div>
                          </div>
-                         <div class="item-price">£4</div>
+                         <div class="item-price">£5</div>
+                     </div>
+                     <div class="menu-item interactive"
+                          data-name="Steamed Rice"
+                          data-description="Perfectly steamed jasmine rice, a classic accompaniment to any dish."
+                          data-ingredients="Jasmine Rice, Water.">
+                         <div>
+                             <div class="item-name">Steamed Rice</div>
+                             <div class="item-desc">Classic steamed jasmine rice</div>
+                         </div>
+                         <div class="item-price">£3</div>
+                     </div>
+                     <div class="menu-item interactive"
+                          data-name="Indonesian Omelette"
+                          data-description="Fluffy omelette with fresh spring onions, Indonesian style."
+                          data-ingredients="Eggs, Spring Onion, Salt, Pepper, Vegetable Oil.">
+                         <div>
+                             <div class="item-name">Indonesian Omelette</div>
+                             <div class="item-desc">Spring onion eggs</div>
+                         </div>
+                         <div class="item-price">£5</div>
+                     </div>
+                     <div class="menu-item interactive"
+                          data-name="Fresh Vietnamese Spring Rolls"
+                          data-description="Light and refreshing rice paper rolls filled with succulent prawns and fresh herbs."
+                          data-ingredients="Rice Paper, Prawns, Rice Vermicelli, Lettuce, Mint, Coriander, Cucumber, Peanut Dipping Sauce.">
+                         <div>
+                             <div class="item-name">Fresh Vietnamese Spring Rolls</div>
+                             <div class="item-desc">Prawn (3-4 pcs)</div>
+                         </div>
+                         <div class="item-price">£8</div>
+                     </div>
+                     <div class="menu-item interactive"
+                          data-name="Chicken Wonton Soup"
+                          data-description="Delicate chicken wontons in a savory broth."
+                          data-ingredients="Chicken, Wonton Wrappers, Chicken Broth, Garlic, Spring Onion, Soy Sauce, Sesame Oil.">
+                         <div>
+                             <div class="item-name">Chicken Wonton Soup</div>
+                             <div class="item-desc">3 pcs wontons in soup</div>
+                         </div>
+                         <div class="item-price">£5</div>
+                     </div>
+                     <div class="menu-item interactive"
+                          data-name="Bakwan Jagung (5 pcs)"
+                          data-description="Crispy Indonesian corn fritters packed with sweet corn kernels and aromatic spices."
+                          data-ingredients="Sweet Corn, Flour, Eggs, Spring Onion, Garlic, Coriander, Salt, Pepper.">
+                         <div>
+                             <div class="item-name">Bakwan Jagung (5 pcs)</div>
+                             <div class="item-desc">Corn fritters</div>
+                         </div>
+                         <div class="item-price">£7</div>
+                     </div>
+                     <div class="menu-item interactive"
+                          data-name="Stir-Fried Green Beans with Bean Sprouts"
+                          data-description="Fresh green beans and crunchy bean sprouts stir-fried with garlic and savory seasonings."
+                          data-ingredients="Green Beans, Bean Sprouts, Garlic, Shallots, Oyster Sauce, Soy Sauce, Sesame Oil.">
+                         <div>
+                             <div class="item-name">Stir-Fried Green Beans with Bean Sprouts</div>
+                             <div class="item-desc">1 portion</div>
+                         </div>
+                         <div class="item-price">£7</div>
                      </div>
                  </div>
              </div>
@@ -351,15 +423,17 @@
 
     </main>
 
-    <footer class="fade-in">
+    <footer>
         <div class="container">
-            <h3>Spice Island Indonesia</h3>
-            <div style="margin: 2rem 0;">
-                <p>This is not a takeaway!</p>
-                <p>Each dish is home cooked with love.</p>
+            <div class="logo-container" style="margin-bottom: 1.5rem;">
+                <img src="images/colour_logo.svg" alt="Spice Island Indonesia Logo" style="width: 150px;">
+            </div>
+            <div style="margin: 2rem 0; font-size: 1.1rem;">
+                <p style="font-style: italic; opacity: 0.9;">This is not a takeaway!</p>
+                <p style="font-style: italic; opacity: 0.9;">Each dish is home cooked with love.</p>
             </div>
             <div class="contact-info">
-                📞 07877 282625
+                📞 <a href="tel:07877282625">07877 282625</a>
             </div>
             <p class="note">Minimum order two items & order one day before collection / drop off.</p>
         </div>
