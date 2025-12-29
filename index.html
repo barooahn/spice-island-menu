@@ -11,7 +11,7 @@
 			name="description"
 			content="Authentic Indonesian homemade cuisine. Dimsum, Rendang, Laksa, and more."
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css?v=9" />
 		<link
 			rel="icon"
 			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌶️</text></svg>"
@@ -134,7 +134,8 @@
 						>
 							<div>
 								<div class="item-name">
-									Tahu Kwalik (4 pcs)
+									Tahu Kwalik
+									<span class="item-sub">(4 pcs)</span>
 								</div>
 								<div class="item-desc">
 									Indonesian style deep fried tofu
@@ -161,13 +162,15 @@
 						</div>
 						<div
 							class="menu-item interactive"
-							data-name="Tahu Isi (4 pcs)"
+							data-name="Tahu Isi (4 pcs) (Vegan Friendly)"
 							data-description="Savory stuffed tofu filled with a stir-fried vegetable mix, battered and deep-fried until golden."
 							data-ingredients="Tofu, Carrots, Cabbage, Bean Sprouts, Garlic, Shallots, Flour Batter."
 						>
 							<div>
 								<div class="item-name">
-									Tahu Isi (4 pcs)
+									Tahu Isi
+									<span class="item-sub">(4 pcs)</span>
+									<span class="item-sub">(Vegan Friendly)</span>
 								</div>
 								<div class="item-desc">
 									Stuffed tofu
@@ -194,19 +197,55 @@
 						</div>
 						<div
 							class="menu-item interactive"
-							data-name="Tempeh Goreng Tepung (6 pcs)"
+							data-name="Tempeh Goreng Tepung (6 pcs) (Vegan Friendly)"
 							data-description="Nutty and earthy tempeh coated in a seasoned batter with aromatic spices and fried to perfection."
 							data-ingredients="Tempeh (Fermented Soybeans), Rice Flour, Turmeric, Coriander, Garlic, Kaffir Lime Leaf."
 						>
 							<div>
 								<div class="item-name">
-									Tempeh Goreng Tepung (6 pcs)
+									Tempeh Goreng Tepung
+									<span class="item-sub">(6 pcs)</span>
+									<span class="item-sub">(Vegan Friendly)</span>
 								</div>
 								<div class="item-desc">
 									Fried tempeh in batter
 								</div>
 							</div>
 							<div class="item-price">£5</div>
+						</div>
+					</div>
+					<div class="menu-card has-image">
+						<div class="menu-card-image">
+							<picture>
+								<source
+									srcset="
+										images/optimized/tempeh_goreng.webp
+									"
+									type="image/webp"
+								/>
+								<img
+									src="images/tempeh_goreng.png"
+									alt="Tempeh Chili Crispy"
+									loading="lazy"
+								/>
+							</picture>
+						</div>
+						<div
+							class="menu-item interactive"
+							data-name="Tempeh Chili Crispy (Vegan Friendly)"
+							data-description="Crispy fried tempeh tossed in a spicy chili seasoning. A perfect crunch with a kick."
+							data-ingredients="Tempeh, Chili, Garlic, Salt, Pepper, Vegetable Oil, Spring Onion."
+						>
+							<div>
+								<div class="item-name">
+									Tempeh Chili Crispy
+									<span class="item-sub">(Vegan Friendly)</span>
+								</div>
+								<div class="item-desc">
+									Spicy crispy tempeh
+								</div>
+							</div>
+							<div class="item-price">£6</div>
 						</div>
 					</div>
 					<div class="menu-card has-image">
@@ -227,13 +266,15 @@
 						</div>
 						<div
 							class="menu-item interactive"
-							data-name="Crispy Tofu (4 pcs)"
+							data-name="Crispy Tofu (4 pcs) (Vegan Friendly)"
 							data-description="Golden crispy tofu pieces, perfectly fried until crunchy on the outside and soft inside."
 							data-ingredients="Firm Tofu, Cornstarch, Salt, Pepper, Vegetable Oil."
 						>
 							<div>
 								<div class="item-name">
-									Crispy Tofu (4 pcs)
+									Crispy Tofu
+									<span class="item-sub">(4 pcs)</span>
+									<span class="item-sub">(Vegan Friendly)</span>
 								</div>
 								<div class="item-desc">
 									Deep fried crispy tofu
@@ -300,16 +341,17 @@
 						</div>
 						<div
 							class="menu-item interactive"
-							data-name="Nasi Goreng Sayur"
+							data-name="Nasi Goreng Sayur (Vegan Friendly)"
 							data-description="Classic Indonesian fried rice loaded with fresh mixed vegetables and sweet soy sauce."
 							data-ingredients="Jasmine Rice, Sweet Soy Sauce (Kecap Manis), Garlic, Shallots, Carrots, Green Beans, Cabbage, Chili."
 						>
 							<div class="item-name">
 								Nasi Goreng Sayur
+								<span class="item-sub">(Vegan Friendly)</span>
 							</div>
+							<div class="item-desc">Vegetable fried rice</div>
 							<div class="item-price">£7</div>
 						</div>
-						<div class="item-desc">Vegetable fried rice</div>
 					</div>
 					<div class="menu-card has-image">
 						<div class="menu-card-image">
@@ -334,9 +376,9 @@
 							data-ingredients="Jasmine Rice, Chicken Breast, Sweet Soy Sauce (Kecap Manis), Garlic, Chili, Shallots, Egg."
 						>
 							<div class="item-name">Nasi Goreng Ayam</div>
+							<div class="item-desc">Chicken fried rice</div>
 							<div class="item-price">£8</div>
 						</div>
-						<div class="item-desc">Chicken fried rice</div>
 					</div>
 					<div class="menu-card has-image">
 						<div class="menu-card-image">
@@ -363,9 +405,9 @@
 							<div class="item-name">
 								Nasi Goreng Udang
 							</div>
+							<div class="item-desc">Prawn fried rice</div>
 							<div class="item-price">£9</div>
 						</div>
-						<div class="item-desc">Prawn fried rice</div>
 					</div>
 					<div class="menu-card has-image">
 						<div class="menu-card-image">
@@ -390,10 +432,10 @@
 							data-ingredients="Beef Shin, Coconut Milk, Lemongrass, Galangal, Ginger, Turmeric, Chili, Kaffir Lime Leaves, Toasted Coconut."
 						>
 							<div class="item-name">Rendang</div>
+							<div class="item-desc">
+								Slow cooked rich beef stew (1 portion)
+							</div>
 							<div class="item-price">£12</div>
-						</div>
-						<div class="item-desc">
-							Slow cooked rich beef stew (1 portion)
 						</div>
 					</div>
 				</div>
@@ -554,13 +596,15 @@
 						</div>
 						<div
 							class="menu-item interactive"
-							data-name="Mix Vegetables (Oyster Sauce)"
-							data-description="Fresh mixed seasonal vegetables stir-fried in a savory oyster sauce."
-							data-ingredients="Broccoli, Cauliflower, Carrots, Mushroom, Baby Corn, Oyster Sauce, Garlic."
+							data-name="Mix Vegetables (Mushroom Sauce) (Vegan Friendly)"
+							data-description="Fresh mixed seasonal vegetables stir-fried in a savory mushroom sauce."
+							data-ingredients="Broccoli, Cauliflower, Carrots, Mushroom, Baby Corn, Mushroom Sauce, Garlic."
 						>
 							<div>
 								<div class="item-name">
-									Mix Vegetables (Oyster Sauce)
+									Mix Vegetables
+									<span class="item-sub">(Mushroom Sauce)</span>
+									<span class="item-sub">(Vegan Friendly)</span>
 								</div>
 							</div>
 							<div class="item-price">£8.50</div>
@@ -620,7 +664,8 @@
 						>
 							<div>
 								<div class="item-name">
-									Ayam Penyet (4 pcs Chicken Legs)
+									Ayam Penyet
+									<span class="item-sub">(4 pcs Chicken Legs)</span>
 								</div>
 								<div class="item-desc">
 									with Salad and Sambal
@@ -796,8 +841,10 @@
 							data-ingredients="Rice Paper, Rice Vermicelli, Lettuce, Vegetables, Mint, Peanut Dipping Sauce."
 						>
 							<div>
+								<div class="item-name">Vegetarian</div>
+								<span class="item-sub">(4 pcs)</span>
 								<div class="item-desc">
-									Vegetarian (4 pcs) - Rice vermicelli, lettuce, vegetables, mint
+									Rice vermicelli, lettuce, vegetables, mint
 								</div>
 							</div>
 							<div class="item-price">£6</div>
@@ -809,8 +856,10 @@
 							data-ingredients="Rice Paper, Rice Vermicelli, Lettuce, Vegetables, Mint, Prawns, Peanut Dipping Sauce."
 						>
 							<div>
+								<div class="item-name">Prawn</div>
+								<span class="item-sub">(4 pcs)</span>
 								<div class="item-desc">
-									Prawn (4 pcs) - Rice vermicelli, lettuce, vegetables, mint, prawns
+									Rice vermicelli, lettuce, vegetables, mint, prawns
 								</div>
 							</div>
 							<div class="item-price">£9</div>
@@ -839,9 +888,9 @@
 							data-ingredients="Chicken, Wonton Wrappers, Chicken Broth, Garlic, Spring Onion, Soy Sauce, Sesame Oil."
 						>
 							<div>
-								<div class="item-name">Wonton Soup</div>
-								<div class="item-desc">
-									Chicken Wonton 4pcs
+								<div class="item-name">
+									Wonton Soup
+									<span class="item-sub">(4 pcs Chicken Wonton)</span>
 								</div>
 							</div>
 							<div class="item-price">£6</div>
@@ -865,13 +914,15 @@
 						</div>
 						<div
 							class="menu-item interactive"
-							data-name="Bakwan Jagung (4 pcs)"
+							data-name="Bakwan Jagung (4 pcs) (Vegan Friendly)"
 							data-description="Crispy Indonesian corn fritters packed with sweet corn kernels and aromatic spices."
-							data-ingredients="Sweet Corn, Flour, Eggs, Spring Onion, Garlic, Coriander, Salt, Pepper."
+							data-ingredients="Sweet Corn, Flour, Spring Onion, Garlic, Coriander, Salt, Pepper."
 						>
 							<div>
 								<div class="item-name">
-									Bakwan Jagung (4 pcs)
+									Bakwan Jagung
+									<span class="item-sub">(4 pcs)</span>
+									<span class="item-sub">(Vegan Friendly)</span>
 								</div>
 								<div class="item-desc">
 									Corn fritters
@@ -889,9 +940,7 @@
 								<div class="item-name">
 									Stir fry Bean sprouts with green
 									beans
-								</div>
-								<div class="item-desc">
-									1 portion (2/3 people)
+									<span class="item-sub">(1 portion - 2/3 people)</span>
 								</div>
 							</div>
 							<div class="item-price">£8</div>
